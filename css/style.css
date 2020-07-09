@@ -27,7 +27,7 @@ ul {
 
 li a {
   display: block;
-  color: #000;
+  color: black;
   padding: 8px 16px;
   text-decoration: none;
 }
@@ -54,4 +54,10 @@ body{
     margin-right: auto;
     
 	
+}
+
+
+.divImg img{float:left;
+width:35%;
+	height:auto;
 }
