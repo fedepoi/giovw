@@ -6,6 +6,8 @@
  		<title>giovanniWebSite</title>
 		<link rel="stylesheet" type="text/css" href="../css/style.css">
 		
+
+		
 	
 </head>  
  <body>
@@ -38,18 +40,24 @@
  <!-- Full-width images with number text -->
   <div class="mySlides">
     <div class="numbertext">1 / 6</div>
-      <img src="../img/LAURA-01-620x802.jpg" alt="LAURA-01-620x802"  >
+      
+	  <?php     include ('getimages.php'); ?>
 	  
-	<?php
-    echo "hey";
-    $files = scandir('../img');
-    foreach($files as $file) {
-        if($file !== "." && $file !== "..") {
-            echo "<img src='$file' />";
-        }
-    }
-?>
-	  
+	  <script src="../getimages.php"></script>
+ 
+<script type="text/javascript">
+ 
+var curimg=0
+function rotateimages(){
+    document.getElementById("slideshow").setAttribute("src", "../img/"+galleryarray[curimg])
+    curimg=(curimg<galleryarray.length-1)? curimg+1 : 0
+}
+ 
+window.onload=function(){
+    setInterval("rotateimages()", 2500)
+}
+</script>
+	 <img id="slideshow" src="../img/LAURA-01-620x802.jpg" alt="LAURA-01-620x802"  > 
 
   </div>
   <!-- Next and previous buttons -->
