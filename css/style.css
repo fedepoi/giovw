@@ -68,6 +68,10 @@ width:45%;
 height:auto;
 }
 
+.arrows{
+      	cursor: pointer;
+}
+.next{padding: 500px;}
 
 
 
