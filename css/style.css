@@ -38,9 +38,11 @@ li a.active {
 }
 
 li a:hover:not(.active) {
-  background-color: #555;
-  color: white;
+  background-color: none;
+  color: #66ff66;
 }
+
+
 
 body{
 	background-color :none;}
@@ -56,8 +58,157 @@ body{
 	
 }
 
+.mySlides {display: none}
 
-.divImg img{float:left;
-width:35%;
-	height:auto;
+#prima{display:block;}
+
+
+.mySlides img{
+width:45%;
+height:auto;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
