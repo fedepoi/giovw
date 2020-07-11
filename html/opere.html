@@ -6,29 +6,7 @@
  		<title>giovanniWebSite</title>
 		<link rel="stylesheet" type="text/css" href="../css/style.css">
 				
-	<script>
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  slides[slideIndex-1].style.display = "block";  
-}
-</script>
+	
 	
 	
 	
@@ -38,17 +16,19 @@ function showSlides(n) {
 </head>  
  <body>
  <div class="grid-container">
- <div class="item1"></div>
+ <div class="item1"><h1 id="title"><a href="../index.html">Giovanni Cosmo</a></h1></div>
+ 
  <div class="item2">
  <ul>
- <li><a href="../index.html"><h1>Giovanni Cosmo</h1></a></li>
- <li><a href="../index.html">home</a></li>
- <li><a href="#bio">bio</a></li> 
- <li><a href="#opere">opere</a></li>
- <li><a href="#contatti">contatti</a></li>
+ <li><a href="#Giovanni Cosmo">Typez</a></li>
+ <li><a href="#home">Self</a></li>
+ <li><a href="#bio">Grabs</a></li> 
+ <li><a href="html/opere.html">opere/ Portraits</a></li>
+ <li><a href="#Hello my name is">Hello my name is</a></li>
+ <li><a href="#Contacts">Contacts</a></li>
+ 
  </ul>
  </div>
- 
  <div class="item3">
  <!-- <div class="divImg"> -->
  <!-- <img src="../img/0_2.jpg" alt="0_2"  > -->
@@ -88,7 +68,29 @@ function showSlides(n) {
   <a class="next" onclick="plusSlides(1)">&#10095;</a>
  </div>
  
- 
+ <script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  slides[slideIndex-1].style.display = "block";  
+}
+</script>
  
  
  
