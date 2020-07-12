@@ -5,12 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
  		<title>Typez</title>
 		<link rel="stylesheet" type="text/css" href="../css/style.css">		
-
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 		
 </head>  
  <body>
+ 
+ 
  <div class="grid-container">
  
  <div class="item1"><h1 id="title"> <a href="../index.html">Giovanni Cosmo</a></h1></div>
@@ -27,62 +28,32 @@
  </ul>
  </div>
  <div class="item3">
- <!-- <div class="divImg"> -->
- <!-- <img src="../img/0_2.jpg" alt="0_2"  > -->
- <!-- <img src="../img/IMG_1836.jpg" alt="IMG_1836"  > -->
- <!-- <img src="../img/isastar.jpg" alt="isastar"  > -->
- <!-- <img src="../img/LAURA-01-620x802.jpg" alt="LAURA-01-620x802"  > -->
- <!-- </div> -->
  
  <div class="imgContainer" id="slides">
  <img class="myImages" id="myImg" src="../img/IMG_1836.jpg" alt="IMG_1836" id="myImg" >
  <img class="myImages" id="myImg" src="../img/0_2.jpg" alt="0_2" style="object-position: 0% -1%;" >
  <img class="myImages" id="myImg" src="../img/isastar.jpg" alt="isastar" style="object-position: 100%" >
  <img class="myImages" id="myImg" src="../img/LAURA-01-620x802.jpg" alt="LAURA-01-620x802"  >
- 
- 
- 
  </div>
  
  
   
  <div id="myModal" class="modal">
   <span class="close">&times;</span>
+  
+  <img class="modal-content" id="img01">
+ 
+ <div id="caption">  </div>
   <div class="arrows">
   <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  <a id="left-button" class="prev" onclick="plusDivs(-1)" >&#10094;</a>
+  <a id="right-button" class="next" onclick="plusDivs(1)">&#10095;</a>
  </div>
-  <img class="modal-content" id="img01">
-  <div id="caption"></div>
 </div>
 
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementById("slides").getElementsByTagName("img").length;
-  var content=document.getElementsByClassName("modal-content");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      content[i].style.display = "none";  
-  }
-  <!-- content[slideIndex-1].style.display = "block";  ---------------------------------------- -->erroreeeeeeeee
-}
-</script>
  
- 
+
+
  <script>
 // create references to the modal...
 var modal = document.getElementById('myModal');
@@ -117,6 +88,42 @@ span.onclick = function() {
 
 
 </script>
+
+
+ 
+ <script>
+ $(document).ready(function(){ 
+  $(".imgContainer").clone().appendTo(".modal");
+ });
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  <!-- var x = document.getElementsByClassName("myImages"); -->
+  var mc=document.getElementsByClassName("modal-content");
+  
+  
+  if (n > mc.length) {slideIndex=1}
+  if (n < 1) {slideIndex = mc.length}
+  for (i = 0; i <mc.length; i++) {
+   
+   mc[i].style.display = "block";
+  }
+  mc[slideIndex - 1].style.display = "none";
+}
+ 
+ 
+ 
+ 
+ 
+ </script>
+ 
 
  
 
