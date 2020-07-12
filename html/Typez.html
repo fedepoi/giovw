@@ -29,11 +29,20 @@
  </div>
  <div class="item3">
  
- <div class="imgContainer" id="slides">
+ <div class="imgContainer">
+ 
+ <div class="carSlides">
  <img class="myImages" id="myImg" src="../img/IMG_1836.jpg" alt="IMG_1836" id="myImg" >
+ </div>
+ <div class="carSlides">
  <img class="myImages" id="myImg" src="../img/0_2.jpg" alt="0_2" style="object-position: 0% -1%;" >
+ </div>
+ <div class="carSlides">
  <img class="myImages" id="myImg" src="../img/isastar.jpg" alt="isastar" style="object-position: 100%" >
+ </div>
+ <div class="carSlides">
  <img class="myImages" id="myImg" src="../img/LAURA-01-620x802.jpg" alt="LAURA-01-620x802"  >
+ </div>
  </div>
  
  
@@ -93,7 +102,11 @@ span.onclick = function() {
  
  <script>
  $(document).ready(function(){ 
-  $(".imgContainer").clone().appendTo(".modal");
+ $(".imgContainer").clone().appendTo(".modal");
+
+
+ 
+ 
  });
 
 var slideIndex = 1;
@@ -105,13 +118,13 @@ function plusDivs(n) {
 
 function showDivs(n) {
   var i;
-  <!-- var x = document.getElementsByClassName("myImages"); -->
+  <!-- var x = document.getElementsByClassName(".s"); -->
   var mc=document.getElementsByClassName("modal-content");
   
   
   if (n > mc.length) {slideIndex=1}
   if (n < 1) {slideIndex = mc.length}
-  for (i = 0; i <mc.length; i++) {
+  for (i = 0; i <x.length; i++) {
    
    mc[i].style.display = "block";
   }
