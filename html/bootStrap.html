@@ -8,8 +8,8 @@
 
 <!--Bootstrap-->
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<!-- my css -->
 
-<link rel="stylesheet" type="text/css" href="../css/style.css">
 
 <!--Latest stable release of jQuery Core Library-->
 <script src="https://code.jquery.com/jquery-1.12.2.min.js" integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk=" crossorigin="anonymous"></script> 
@@ -18,12 +18,12 @@
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
 </script>
 
-		
+<link rel="stylesheet" type="text/css" href="../css/style.css">		
 </head>  
  <body>
  
  
- <div class="grid-container">
+ <div class="grid-container" id="gridHome">
  
  <div class="item1"><h1 id="title"> <a href="../index.html">Giovanni Cosmo</a></h1></div>
  
@@ -40,24 +40,18 @@
  </div>
  <div class="item3">
  
- <div class="imgContainer" style="display:none">
- <img class="myImages" id="myImg" src="../img/IMG_1836.jpg" alt="IMG_1836"  >
- <img class="myImages" id="myImg" src="../img/0_2.jpg" alt="0_2" style="object-position: 0% -1%;" >
- <img class="myImages" id="myImg" src="../img/isastar.jpg" alt="isastar" style="object-position: 100%" >
- <img class="myImages" id="myImg" src="../img/LAURA-01-620x802.jpg" alt="LAURA-01-620x802"  >
- </div>
- 
- 
 
  <ul class="imgContainer" id="menu">
   <li class="sub" data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="0"><img class="myImages" id="myImg" src="../img/IMG_1836.jpg" alt="IMG_1836"><br>
-Caption</a></li>
+</a></li>
   <li class="sub" data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="1"><img class="myImages" id="myImg"src="../img/0_2.jpg" alt="0_2" style="object-position: 0% -1%;"><br>
-Caption</a></li>
+</a></li>
   <li class="sub" data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="2"><img class="myImages" id="myImg" src="../img/isastar.jpg" alt="isastar" style="object-position: 100%"><br>
-Caption</a></li>
+</a></li>
   <li class="sub" data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="3"><img class="myImages" id="myImg" src="../img/LAURA-01-620x802.jpg" alt="LAURA-01-620x802" ><br>
-Caption</a></li>
+</a></li>
+<li class="sub" data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="4"><img class="myImages" id="myImg" src="../img/stelle-campoReparto-2019.jpg" alt="LAURA-01-620x802" ><br>
+</a></li>
 <!--end of thumbnails-->
 </ul>
 
@@ -65,9 +59,9 @@ Caption</a></li>
  <!--begin modal window-->
 <div class="modal fade" id="myModal">
 <div class="modal-dialog" >
-<div class="modal-content">
-<div class="modal-header">
-<div class="pull-left">My Gallery Title</div>
+<div class="modal-content" id="modalConId" style="background-color:transparent; -webkit-box-shadow:none; border:none;">
+<div class="modal-header" style="border-bottom: none">
+<div class="pull-left"></div>
 <button type="button" class="close" data-dismiss="modal" title="Close"> <span class="glyphicon glyphicon-remove"></span></button>
 </div>
 <div class="modal-body">
@@ -78,26 +72,22 @@ Caption</a></li>
 <div class="carousel-inner">
 <div class="item active"> <img src="../img/IMG_1836.jpg" alt="IMG_1836">
 <div class="carousel-caption">
-<h3>Heading 3</h3>
-<p>Slide 0  description.</p>
 </div>
 </div>
 <div class="item"> <img src="../img/0_2.jpg" alt="0_2">
 <div class="carousel-caption">
-<h3>Heading 3</h3>
-<p>Slide 1 description.</p>
 </div>
 </div>
 <div class="item"> <img src="../img/isastar.jpg" alt="isastar">
 <div class="carousel-caption">
-<h3>Heading 3</h3>
-<p>Slide 2  description.</p>
 </div>
 </div>
 <div class="item"> <img src="../img/LAURA-01-620x802.jpg" alt="LAURA-01-620x802">
 <div class="carousel-caption">
-<h3>Heading 3</h3>
-<p>Slide 2  description.</p>
+</div>
+</div>
+<div class="item"> <img src="../img/stelle-campoReparto-2019.jpg" alt="LAURA-01-620x802">
+<div class="carousel-caption">
 </div>
 </div>
 
@@ -108,7 +98,8 @@ Caption</a></li>
 <!--end carousel--></div>
 
 <!--end modal-body--></div>
-<div class="modal-footer">
+
+<div class="modal-footer" style="border-top: none">
 <div class="pull-left">
 </div>
 <button class="btn-sm close" type="button" data-dismiss="modal">Close</button>

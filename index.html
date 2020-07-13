@@ -5,16 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
  		<title>giovanniWebSite</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	
 </head>  
  <body>
- <div class="grid-container">
+ <div class="topnav" >
+  <a href="#home" class="active">Giovanni Cosmo</a>
+  <div id="myLinks">
+    <a href="html/bootStrap.html">Typez</a>
+    <a href="#contact">Self</a>
+    <a href="#about">Grab</a>
+	<a href="#about">Portraits</a>
+	<a href="#about">Hello my name is</a>
+	<a href="#about">Contacts</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+ 
+ 
+ 
+ <div class="grid-container" id="gridHome">
  <div class="item1">
  <h1 id="title">Giovanni Cosmo</h1>
  </div>
  
  <div class="item2">
- <ul>
+ <ul >
  <li><a href="html/bootStrap.html">Typez</a></li>
  <li><a href="#home">Self</a></li>
  <li><a href="#bio">Grabs</a></li> 
