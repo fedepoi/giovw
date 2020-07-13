@@ -7,6 +7,8 @@
 	font-family:siteFont;
 }
 
+a {color:black;}
+
 #title{
 	font-size:80px;
 }
@@ -39,7 +41,7 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 300px;
+  /* width: 300px; */
   background-color: none;
 }
 
@@ -87,15 +89,15 @@ body{
 /* } */
 
 
-#menu {
-  list-style: none;
-  position: absolute;
-  
+.imgContainer{
+	list-style-type:none;
 }
 
 .imgContainer li{
-display:inline-block;
+	
+	float:left;
 }
+
 
 .imgContainer img{
   object-fit: cover;
