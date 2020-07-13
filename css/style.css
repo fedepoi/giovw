@@ -10,7 +10,7 @@
 
 a {color:black;}
 
-#title{
+#logo{
 	font-size:80px;
 }
 
@@ -80,11 +80,16 @@ body{
 #imgFront{
     max-width: 100%;
     height: auto;
-	width: 65%;
+	width: 80%;
     display: block;
     margin-left: auto;
     margin-right: auto; 
 	
+}
+
+#buttonImg{
+	position: absolute;
+   margin:auto;
 }
 
 
@@ -108,6 +113,15 @@ body{
 	float:left;
 	
 }
+
+.close{color:#fff;}
+
+
+.close:hover{
+	color:#fff;
+	opacity:100;}
+
+
 
 
 
@@ -134,7 +148,7 @@ body{
 
 .topnav{display:none;}
 @media only screen and (max-device-width : 640px) {
-
+.item1{display:none;}
 .item2{display:none;}
 .topnav {
   overflow: hidden;
@@ -169,17 +183,12 @@ body{
 }
 
 .active {
-  background-color: #4CAF50;
+  background-color: #808080;
   color: white;
 }
 
 }
 /* end mobile navigation */
-
-
-
-
-
 
 
 
