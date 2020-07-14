@@ -19,8 +19,13 @@ a {color:black;}
 
 .item1 { grid-area: header; 
 text-align:center;
+/* max-height: 300px; */
 }
-.item2 { grid-area: menu; }
+.item2 { 
+grid-area: menu; 
+/* top: 350px; */
+/* position: absolute; */
+}
 .item3 { grid-area: main; }
 .item4 { grid-area: right; }
 .item5 { grid-area: footer; }
@@ -90,6 +95,8 @@ body{
 #buttonImg{
 	position: absolute;
    margin:auto;
+   width:50%;
+   height:auto;
 }
 
 
@@ -145,7 +152,10 @@ body{
 
 
 /* mobile navigation */
-
+.grid-container:{    
+    position: absolute;
+	left: -40px;
+}
 .topnav{display:none;}
 @media only screen and (max-device-width : 640px) {
 .item1{display:none;}
@@ -186,6 +196,8 @@ body{
   background-color: #808080;
   color: white;
 }
+
+
 
 }
 /* end mobile navigation */
