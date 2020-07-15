@@ -14,7 +14,15 @@ a {color:black;}
 	font-size:80px;
 }
 
-
+#pageContainer{
+	position: relative;
+  min-height: 100vh;
+}
+#contentWrap{padding-bottom: 2.5rem;}
+.foot{ position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;}
 
 
 .item1 { grid-area: header; 
@@ -23,10 +31,12 @@ text-align:center;
 }
 .item2 { 
 grid-area: menu; 
+line-height:14px;
 /* top: 350px; */
 /* position: absolute; */
 }
-.item3 { grid-area: main; }
+.item3 { grid-area: main;
+ }
 .item4 { grid-area: right; }
 .item5 { grid-area: footer; }
 
@@ -39,6 +49,9 @@ grid-area: menu;
   grid-gap: 10px;
   background-color: none;
   padding: 10px;
+  
+  
+
 }
 
 #gridHome{
@@ -85,10 +98,11 @@ body{
 #imgFront{
     max-width: 100%;
     height: auto;
-	width: 80%;
+	/* width: 80%; */
     display: block;
     margin-left: auto;
     margin-right: auto; 
+	padding-top:50px;
 	
 }
 
@@ -102,6 +116,7 @@ body{
 
 .imgContainer{
 	list-style-type:none;
+	display:inline;
 }
 
 .imgContainer li{
