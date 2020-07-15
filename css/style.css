@@ -177,7 +177,7 @@ body{
 .item2{display:none;}
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: #fff;
   position: relative;
   display:block;
 }
@@ -187,7 +187,7 @@ body{
 }
 
 .topnav a {
-  color: white;
+  color: black;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
@@ -195,7 +195,7 @@ body{
 }
 
 .topnav a.icon {
-  background: black;
+  background: #fff;
   display: block;
   position: absolute;
   right: 0;
@@ -208,8 +208,8 @@ body{
 }
 
 .active {
-  background-color: #808080;
-  color: white;
+  background-color: #fff;
+  /* color: white; */
 }
 
 
