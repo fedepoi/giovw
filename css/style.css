@@ -8,6 +8,9 @@
 	font-family:siteFont;
 }
 
+#frontB{border: 1px dotted black;
+float:right;}
+
 a {color:black;}
 
 #logo{
@@ -107,9 +110,9 @@ body{
 }
 
 #buttonImg{
-	position: absolute;
+	/* position: absolute; */
    margin:auto;
-   width:50%;
+   width:45%;
    height:auto;
 }
 
@@ -218,7 +221,12 @@ body{
 /* end mobile navigation */
 
 
-
+.carousel-control.left {
+	left:-80px;
+}
+.carousel-control.right {
+	right:-80px;
+}
 
 
 
