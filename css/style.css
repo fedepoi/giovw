@@ -9,7 +9,18 @@
 }
 
 #frontB{border: 1px dotted black;
-float:right;}
+    font-size: 250%;
+    margin-left: 13%;
+	background-color:deepskyblue;
+	border-radius:25px;
+}
+.frontImgDiv{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	
+	}
+
 
 a {color:black;}
 
