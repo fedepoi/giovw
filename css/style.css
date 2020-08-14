@@ -168,6 +168,15 @@ body{
 .sub{padding: 8px 10px;}
 
 
+/* style carousel controls */
+.carousel-control.left {
+	left:-80px;
+}
+.carousel-control.right {
+	right:-80px;
+}
+/* end carousel controls */
+
 
 /* mobile navigation */
 .grid-container:{    
@@ -215,18 +224,15 @@ body{
   /* color: white; */
 }
 
-
+.carousel-control.left {
+	left:0px;
+}
+.carousel-control.right {
+	right:0px;
+}
 
 }
 /* end mobile navigation */
-
-
-.carousel-control.left {
-	left:-80px;
-}
-.carousel-control.right {
-	right:-80px;
-}
 
 
 
