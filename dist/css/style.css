@@ -255,14 +255,14 @@ body{
   /* color: white; */
 }
 
-/* .carousel-control.left { */
-	/* left:0px; */
-	/* top:510px; */
-/* } */
-/* .carousel-control.right { */
-	/* right:0px; */
-	/* top:510px; */
-/* } */
+.carousel-control.left {
+	left:0px;
+
+}
+.carousel-control.right {
+	right:0px;
+
+}
 
 }
 /* end mobile navigation */
