@@ -1,6 +1,5 @@
 @font-face {
   font-family:siteFont;
-  /* src: url('Salted Monthoers.ttf'); */
   src: url('alternate-gothic-no1-d.ttf');
 }
 
@@ -16,11 +15,7 @@
 	border-radius:25px;
 }
 .frontImgDiv{
-	/* display:block; */
-	/* margin-left:auto; */
-	/* margin-right:auto; */
-	
-	position: fixed;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -38,7 +33,6 @@ a:hover {
 
 #logo{
 	font-size:80px;
-/* width: 60%; */
 padding-bottom: 90px;
 padding-top: 50px;
 max-width: 156.4px;	
