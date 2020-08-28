@@ -202,7 +202,21 @@ body{
 	right:-80px;
 }
 /* end carousel controls */
+#aboutDiv{
+font-size: 20px;
+margin-top: 20%;
+float: left;
+position: relative;
+left: 50%;
+max-width: 300px;
+}
 
+#contentAbout{
+	
+	float: left;
+    position: relative;
+    left: -50%;
+}
 
 /* mobile navigation */
 .grid-container:{    
@@ -259,26 +273,21 @@ body{
 
 }
 
+#aboutDiv{
+left:0%;
+}
+
+#contentAbout{
+	
+    left: 0%;
+}
+
 }
 /* end mobile navigation */
 
 
 /* about page style */
-#aboutDiv{
-font-size: 20px;
-margin-top: 20%;
-float: left;
-position: relative;
-left: 50%;
-max-width: 300px;
-}
 
-#contentAbout{
-	
-	float: left;
-    position: relative;
-    left: -50%;
-}
 
 #aboutImg{width:300px;
 }
