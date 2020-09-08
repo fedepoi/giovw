@@ -3,6 +3,12 @@
   src: url('alternate-gothic-no1-d.ttf');
 }
 
+body {
+  background-color: #fdfdfd;
+}
+
+
+
 *{
 	font-family:siteFont;
 	
