@@ -35,7 +35,7 @@ a:hover {
 	font-size:80px;
 padding-bottom: 90px;
 padding-top: 50px;
-max-width: 156.4px;	
+max-width: 186.4px;	
 	
 	
 	
@@ -47,7 +47,8 @@ max-width: 156.4px;
 	position: relative;
   min-height: 100vh;
 }
-#contentWrap{padding-bottom: 2.5rem;}
+#contentWrap{
+	padding-bottom: 2.5rem;}
 .foot{ position: absolute;
   bottom: 0;
   width: 100%;
