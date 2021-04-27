@@ -217,10 +217,10 @@ body {
 }
 
 /* mobile navigation */
-.grid-container: {
+/* .grid-container {
   position: absolute;
   left: -40px;
-}
+} */
 .topnav {
   display: none;
 }
